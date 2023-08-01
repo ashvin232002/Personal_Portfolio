@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashvin Kumhar Portfolio</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/2ca348f0ab.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="images/ashvinlogo.png" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" class="role">
+         
+          <h2>HI THERE !<img  class="handGift"    src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
+            width="30px"><br/>I'M <span>ASHVIN KUMHAR</span></h2>
+
+          <p > <span class="auto-type"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Ashvin_Image.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About me</h2>
+            <br />
+            <p>
+              <span class="space">      </span>   Welcome to my portfolio! I'm Ashvin Kumhar a passionate programmer with a love for 
+              crafting elegant and efficient solutions through code. I'm undergraduate at Pandit Deendayal Energy 
+              University. I love Problem Solving and doing competitive Programming .I have solved more than 1500+ problem 
+              of Data Structures and Algorithms across various Platform like (Leetcode, codeforces, geeksforgeeks).
+              I also knowledge of Fullstack web Development including API building with prfect end points.
+              Currently I'm learning Different System Design Concepts to make an application fast and scalable.
+
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Handles
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Langague</span><br />C++ , Java , JavaScript , SQL </li>
+                <li><span>FrontEnd Technologies</span><br />HTML , CSS , JavaScript, ReactJs (Redux , Context API) , tailwind CSS</li>
+                <li><span>BackEnd  Technologies</span><br />Nodejs , Expressjs ,MongoDB , Mongoose , SQL ,Graph QL</li>
+                <li><span>Tools & Technologies</span><br />Version control (Git/GitHub) , Postman ,VS code</li>
+                <li><span>Others</span><br />Data Structures and Algorithms , Data Base Management System , Computer Networks ,
+                  Object Oriented Programming.</li>
+              </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Designingri0-oiriorior Web/App
+                  Interfaces
+                </li>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+              </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Pandit Deendayal Energy University</span><br />(Btech in Information Technology)<br/>CGPA : 9.38  (till sem 6)</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------portfolio---------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Graphify.png" alt="" />
+            <div class="layer">
+              <h3>Graphify</h3>
+              <p>
+                graphify is a basically a web app which allow you to understand or visulize the Graph algorithms like BFS
+                 (Breath First Search ) , DFS (Depth First Search ) , A* (A-star Algorithm) , Greedy Search Algorithm , 
+                 Shortest Path Algorithm (Dijkstra's Algorithm)
+              </p>
+              <a href="https://graphiy.netlify.app/"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/MedicineTracker.png" alt="" />
+            <div class="layer">
+                <h3>MedicineTracker</h3>
+                <p>
+                  medicineTracker is a basically a platform where Admin(Store owner) can add stock of medicine that 
+                  they have available or delete the stock which he added , while User side User can search by The medicine and
+                   get The available shop Owners in their particular district .
+                </p>
+                <a href="https://github.com/ashvin232002/MedicineTracker"><i class="fa-solid fa-link"></i></i></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="images/LinkArchieve.png" alt="" />
+            <div class="layer">
+                <h3>LinkArchieve</h3>
+                <p>
+                  LinkArchieve is a PlatForm Where You can Store The Link of The important Stuff with their Title , name , description ,
+                  also along side it you can mark a star , view or you can delete the Link. Here a perfect signup and login functionality would be added .
+
+                </p>
+                <a href="https://github.com/ashvin232002/LinkArchieve"><i class="fa-solid fa-link"></i></a>
+              </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <!-- <h1 class="sub-title">My Work</h1> -->
+        <div class="work-list">
+          <div class="work">
+            <img src="images/EdtechPlatform.png" alt="" />
+            <div class="layer">
+              <h3>EdtechPlatform </h3>
+              <p>
+                EdtechPlatform  is my Learning Project. functionality including login,signup , course creation by Instructor , adding videos into course
+                student can buy the course so that implemented payment functionality razorpay integration with review,and course progress tracker.
+                and all the functionality.
+                Two Different UI for Instructor and Student.
+                
+              </p>
+              <a href="https://studynotion-edtech-project.vercel.app/"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/FindOnGitHub.png" alt="" />
+            <div class="layer">
+                <h3>Find On GitHub</h3>
+                <p>
+                  FindOnGitHub is basically useful in the finding a someone's github profile.Here implemented dark mode and light mode functionality also.
+                  Used a GitHub api to basically find the data of the user.
+                </p>
+                <a href="https://find-git-hub-profile.netlify.app/"><i class="fa-solid fa-link"></i></i></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="images/ecommarce.png" alt="" />
+            <div class="layer">
+                <h3>Ecommarce Web App</h3>
+                <p>
+                  Ecommarce web app where perfect cart functionality would be implemented using react redux . It is my learnign project for the react redux.
+                </p>
+                <a href="https://reduxecommarceproject.netlify.app/"><i class="fa-solid fa-link"></i></a>
+              </div>
+          </div>
+        </div>
+        <a href="https://github.com/ashvin232002" class="btn">See More</a>
+      </div>
+    </div>
+
+
+    <!-- ---------------------Contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ashvinkumhar2310@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7567204423</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/ashvin232002"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/AshvinKumhar"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ashvin_678/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ashvin-kumhar-0a34ab237/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1Q7OWq6MvqIyTcd8JSDxVfk_h10lOVHeQ/view?usp=sharing" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <!-- <a href="" download class="btn btn2">Download CV</a> -->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+             <p>connect me <i class="fas fa-heart" ></i></p>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu =  document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyEtB_jp54szkH_p5W0tuDRNZdBEFnz9zhARwiZ-Rzxp2AYurlEPbAcs6uVPqnmKxWk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML =  "Message sent successfully"
+        setTimeout(function(){
+           msg.innerHTML=""
+        },5000)
+        form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed =  new Typed(".auto-type",{
+      strings : ["Competitive Programmer |" , "Fullstack Web Developer |", "Problem Solver |",],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    })
+  </script>
+</html>
